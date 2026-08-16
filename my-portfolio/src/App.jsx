@@ -1,5 +1,5 @@
 import './App.css'
-import { useNavigate, useLocation, Routes, Route, BrowserRouter } from "react-router-dom";
+import { useNavigate, useLocation, Routes, Route, HashRouter } from "react-router-dom";
 import { useState } from "react";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -46,7 +46,7 @@ export default function App() {
           <h1>Powering off...</h1>
         </div>
       )}
-    <BrowserRouter basename = {import.meta.env.BASE_URL}>
+    <HashRouter>
       <Routes key={location.key}>
         <Route path="/" element={<Home 
         onLoaded={handlePageReady}
@@ -179,7 +179,7 @@ export default function App() {
         }}
         />}/>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
    
     
     </>
