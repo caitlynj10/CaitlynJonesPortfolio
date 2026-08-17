@@ -18,13 +18,13 @@ export default function sketch(onButtonPress, onLoaded){
     
         p.createCanvas(window.innerWidth, window.innerHeight);
         try{
-            pressStart  = await p.loadFont('${import.meta.env.BASE_URL}fonts/PressStart2P.ttf');
-            arial = await p.loadFont('${import.meta.env.BASE_URL}fonts/ARIAL.TTF');
-            gitIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Github.png");
-            linkedIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Linkedin.png");
-            emailIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Email.png");
-            qmIM = await p.loadImage("${import.meta.env.BASE_URL}icons/QM.png");
-            profPic = await p.loadImage("${import.meta.env.BASE_URL}icons/ProfPic.jpg");
+            pressStart  = await p.loadFont(`${import.meta.env.BASE_URL}fonts/PressStart2P.ttf`);
+            arial = await p.loadFont(`${import.meta.env.BASE_URL}fonts/ARIAL.TTf`);
+            gitIM = await p.loadImage(`${import.meta.env.BASE_URL}icons/Github.png`);
+            linkedIM = await p.loadImage(`${import.meta.env.BASE_URL}icons/Linkedin.png`);
+            emailIM = await p.loadImage(`${import.meta.env.BASE_URL}icons/Email.png`);
+            qmIM = await p.loadImage(`${import.meta.env.BASE_URL}icons/QM.png`);
+            profPic = await p.loadImage(`${import.meta.env.BASE_URL}icons/ProfPic.jpg`);
         }catch(error){
             console.error("Error loading assets in sketch: ", error);
         }finally{
