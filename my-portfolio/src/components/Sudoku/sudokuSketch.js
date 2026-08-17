@@ -300,13 +300,13 @@ export default function sketch(onButtonPress, onLoaded){
     p.setup = async () =>{
         p.createCanvas(window.innerWidth, window.innerHeight);
         try{
-            pressStart  = await p.loadFont('/fonts/PressStart2P.ttf');
-            arial = await p.loadFont('/fonts/ARIAL.TTF');
-            garamond = await p.loadFont('/fonts/Garamond.ttf');
-            gitIM = await p.loadImage("/icons/Github.png");
-            linkedIM = await p.loadImage("/icons/Linkedin.png");
-            emailIM = await p.loadImage("/icons/Email.png");
-            qmIM = await p.loadImage("/icons/QM.png");
+            pressStart  = await p.loadFont('${import.meta.env.BASE_URL}fonts/PressStart2P.ttf');
+            arial = await p.loadFont('${import.meta.env.BASE_URL}fonts/ARIAL.TTF');
+            garamond = await p.loadFont('${import.meta.env.BASE_URL}fonts/Garamond.ttf');
+            gitIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Github.png");
+            linkedIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Linkedin.png");
+            emailIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Email.png");
+            qmIM = await p.loadImage("${import.meta.env.BASE_URL}icons/QM.png");
         }catch(error){
             console.error("Error loading assets in sketch:", error);
         }finally{

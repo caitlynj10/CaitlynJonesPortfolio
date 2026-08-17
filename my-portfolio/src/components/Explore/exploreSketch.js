@@ -38,34 +38,34 @@ export default function sketch(onButtonPress, onLoaded){
     
         p.createCanvas(window.innerWidth, window.innerHeight);
         try{
-            pressStart  = await p.loadFont('/fonts/PressStart2P.ttf');
-            arial = await p.loadFont('/fonts/ARIAL.TTF');
-            garamond = await p.loadFont('/fonts/Garamond.ttf');
-            times = await p.loadFont('/fonts/times.ttf');
-            gitIM = await p.loadImage("/icons/Github.png");
-            linkedIM = await p.loadImage("/icons/Linkedin.png");
-            emailIM = await p.loadImage("/icons/Email.png");
-            qmIM = await p.loadImage("/icons/QM.png");
+            pressStart  = await p.loadFont('${import.meta.env.BASE_URL}fonts/PressStart2P.ttf');
+            arial = await p.loadFont('${import.meta.env.BASE_URL}fonts/ARIAL.TTF');
+            garamond = await p.loadFont('${import.meta.env.BASE_URL}fonts/Garamond.ttf');
+            times = await p.loadFont('${import.meta.env.BASE_URL}fonts/times.ttf');
+            gitIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Github.png");
+            linkedIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Linkedin.png");
+            emailIM = await p.loadImage("${import.meta.env.BASE_URL}icons/Email.png");
+            qmIM = await p.loadImage("${import.meta.env.BASE_URL}icons/QM.png");
 
-            SK = await p.loadImage("/pictures/Sudoku.png");
-            SB = await p.loadImage("/pictures/SpongeBob.png");
+            SK = await p.loadImage("${import.meta.env.BASE_URL}pictures/Sudoku.png");
+            SB = await p.loadImage("${import.meta.env.BASE_URL}pictures/SpongeBob.png");
 
-            java = await p.loadImage("/pictures/Java.png");
-            js = await p.loadImage("/pictures/JS.png");
-            python = await p.loadImage("/pictures/python.png");
-            html = await p.loadImage("/pictures/html.png");
-            css = await p.loadImage("/pictures/css.png");
-            r = await p.loadImage("/pictures/r.png");
-            processing = await p.loadImage("/pictures/processing.png");
-            rStudio = await p.loadImage("/pictures/r studio.png");
-            react = await p.loadImage("/pictures/react.png");
-            twine = await p.loadImage("/pictures/twine.png");
-            spyder = await p.loadImage("/pictures/spyder.png");
-            vite = await p.loadImage("/pictures/vite.png");
-            p5 = await p.loadImage("/pictures/p5.png");
-            githubFull = await p.loadImage("/pictures/githubFull.png");
-            google = await p.loadImage("/pictures/google.png");
-            microsoft = await p.loadImage("/pictures/microsoft.png");
+            java = await p.loadImage("${import.meta.env.BASE_URL}pictures/Java.png");
+            js = await p.loadImage("${import.meta.env.BASE_URL}pictures/JS.png");
+            python = await p.loadImage("${import.meta.env.BASE_URL}pictures/python.png");
+            html = await p.loadImage("${import.meta.env.BASE_URL}pictures/html.png");
+            css = await p.loadImage("${import.meta.env.BASE_URL}pictures/css.png");
+            r = await p.loadImage("${import.meta.env.BASE_URL}pictures/r.png");
+            processing = await p.loadImage("${import.meta.env.BASE_URL}pictures/processing.png");
+            rStudio = await p.loadImage("${import.meta.env.BASE_URL}pictures/r studio.png");
+            react = await p.loadImage("${import.meta.env.BASE_URL}pictures/react.png");
+            twine = await p.loadImage("${import.meta.env.BASE_URL}pictures/twine.png");
+            spyder = await p.loadImage("${import.meta.env.BASE_URL}pictures/spyder.png");
+            vite = await p.loadImage("${import.meta.env.BASE_URL}pictures/vite.png");
+            p5 = await p.loadImage("${import.meta.env.BASE_URL}pictures/p5.png");
+            githubFull = await p.loadImage("${import.meta.env.BASE_URL}pictures/githubFull.png");
+            google = await p.loadImage("${import.meta.env.BASE_URL}pictures/google.png");
+            microsoft = await p.loadImage("${import.meta.env.BASE_URL}pictures/microsoft.png");
 
         }catch(error){
             console.error("Error loading assets in sketch: ", error);
