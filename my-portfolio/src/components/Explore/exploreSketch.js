@@ -39,7 +39,7 @@ export default function sketch(onButtonPress, onLoaded){
         p.createCanvas(window.innerWidth, window.innerHeight);
         try{
             pressStart  = await p.loadFont(`${import.meta.env.BASE_URL}fonts/PressStart2P.ttf`);
-            arial = await p.loadFont(`${import.meta.env.BASE_URL}fonts/ARIAL.ttf`);
+            arial = await p.loadFont(`${import.meta.env.BASE_URL}fonts/ARIAL.TTF`);
             garamond = await p.loadFont(`${import.meta.env.BASE_URL}fonts/Garamond.ttf`);
             times = await p.loadFont(`${import.meta.env.BASE_URL}fonts/times.ttf`);
             gitIM = await p.loadImage(`${import.meta.env.BASE_URL}icons/Github.png`);
